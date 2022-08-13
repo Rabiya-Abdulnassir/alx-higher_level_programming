@@ -1,8 +1,13 @@
 #!/usr/bin/python3
 
 
-def multiple_returns(sentence):
+def max_integer(my_list=[]):
 
-    if (sentence is None) or (sentence == ""):
-        return (0, None)
-    return (len(sentence), sentence[0])
+    if (my_list is None) or (len(my_list) == 0):
+        return None
+    maximum = my_list[0]
+    for i in my_list:
+        if i > maximum:
+            maximum = i
+
+    return maximum
