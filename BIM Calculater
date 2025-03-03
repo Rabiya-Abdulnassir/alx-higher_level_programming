@@ -1,0 +1,73 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyObuq/JIafp04DaxjGeeLPM",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Rabiya-Abdulnassir/alx-higher_level_programming/blob/master/BIM%20Calculater\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oW5OIW6MsMnM",
+        "outputId": "8e50d63f-3e3e-4dde-f173-0d632ae33c68"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your weight in Kilogram: 63\n",
+            "Enter your height in meter: 1.59\n",
+            "24.919900320398717\n",
+            "you have normal weight\n"
+          ]
+        }
+      ],
+      "source": [
+        "weight = int(input (\"Enter your weight in Kilogram: \"))\n",
+        "hight = float(input (\"Enter your height in meter: \"))\n",
+        "BMI= weight/(hight*hight)\n",
+        "if weight <0 and hight <0:\n",
+        "      print (\"Enter the value again\")\n",
+        "elif BMI < 18.5:\n",
+        "    print (BMI)\n",
+        "    print (\"You are Underweight\")\n",
+        "elif 18.4 < BMI > 24.9:\n",
+        "    print (BMI)\n",
+        "    print (\"you have normal weight\")\n",
+        "elif 25 <BMI > 29.9:\n",
+        "    print (BMI)\n",
+        "    print (\"you are overweight\")\n",
+        "\n",
+        "else:\n",
+        "    print (BMI)\n",
+        "    print(\"you are obes\")"
+      ]
+    }
+  ]
+}
